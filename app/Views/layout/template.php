@@ -11,6 +11,7 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/dataTables.bootstrap4.min.css">
 
   <!-- Style -->
   <link rel="stylesheet" href="/css/style.css">

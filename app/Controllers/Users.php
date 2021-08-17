@@ -9,6 +9,6 @@ class Users extends BaseController
     $data = [
       'title' => 'Users Data'
     ];
-    return view('welcome_message', $data);
+    return view('users/index', $data);
   }
 }

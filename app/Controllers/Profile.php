@@ -9,6 +9,6 @@ class Profile extends BaseController
     $data = [
       'title' => 'Profile'
     ];
-    return view('welcome_message', $data);
+    return view('profile/index', $data);
   }
 }

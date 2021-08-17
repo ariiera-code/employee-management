@@ -2,13 +2,26 @@
 
 namespace App\Controllers;
 
+use App\Models\EmployeesModel;
+
 class Employees extends BaseController
 {
+  protected $employeesModel;
+
+  public function __construct()
+  {
+    $this->employeesModel = new EmployeesModel();
+  }
+
   public function index()
   {
+    $employees = $this->employeesModel->findAll();
     $data = [
-      'title' => 'Employees Data'
+      'title' => 'Employees Data',
+      'employees' => $employees
     ];
-    return view('welcome_message', $data);
+
+
+    return view('employees/index', $data);
   }
 }
