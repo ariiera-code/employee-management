@@ -1,4 +1,4 @@
-<div class="site-mobile-menu site-navbar-target">
+<!-- <div class="site-mobile-menu site-navbar-target">
   <div class="site-mobile-menu-header">
     <div class="site-mobile-menu-close mt-3">
       <span class="icon-close2 js-menu-toggle"></span>
@@ -35,4 +35,37 @@
     </div>
   </div>
 
-</header>
+</header> -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="banner">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand" href="/"><span>Logo</span></a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/employees/">Employees</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/users">Users</a>
+        </li>
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Profile
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="/profile">Edit Profile</a>
+            <a class="dropdown-item" href="/logout">Logout</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
